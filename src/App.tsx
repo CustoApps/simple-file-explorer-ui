@@ -1,12 +1,12 @@
 import React from 'react'
+import data from './assets/data.json'
+import { Tree } from './components'
 
 const App: React.FC = () => {
 	return (
-		<div className={`absolute inset-0 grid place-items-center bg-slate-900`}>
-			<p className={`text-[10vw] font-semibold text-gray-200`}>
-				<span>Hello, Alien!</span>
-			</p>
-		</div>
+		<main className={`absolute inset-0 flex justify-center pt-10`}>
+			<Tree data={data as IDir[]} />
+		</main>
 	)
 }
 
